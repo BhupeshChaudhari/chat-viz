@@ -38,13 +38,25 @@ st.sidebar.markdown(
     - 🌟 Most Active Users
     - ☁️ Word Clouds
     - 😊 Emoji Analysis
-
-    **Upload your chat file** to begin exploring!
+    
     """
 )
 
-
 uploaded_file = st.sidebar.file_uploader("📁 Choose a file")
+
+st.sidebar.markdown(
+    """
+    ---
+    **Made by [Bhupesh Chaudhari](https://github.com/BhupeshChaudhari)**
+    
+    ---
+
+    """
+
+)
+
+
+
 if uploaded_file is not None:
     bytes_data = uploaded_file.getvalue()
     data = bytes_data.decode('utf-8')
