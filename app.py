@@ -39,23 +39,14 @@ st.sidebar.markdown(
     - ☁️ Word Clouds
     - 😊 Emoji Analysis
     
-    """
-)
-
-uploaded_file = st.sidebar.file_uploader("📁 Choose a file")
-
-st.sidebar.markdown(
-    """
     ---
     **Made by [Bhupesh Chaudhari](https://github.com/BhupeshChaudhari)**
     
     ---
-
     """
-
 )
 
-
+uploaded_file = st.sidebar.file_uploader("📁 Choose a file")
 
 if uploaded_file is not None:
     bytes_data = uploaded_file.getvalue()
