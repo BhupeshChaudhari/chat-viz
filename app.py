@@ -14,11 +14,29 @@ from nltk.corpus import stopwords
 nltk.download('stopwords')
 
 # Set page config at the top
-st.set_page_config(page_title="WhatsApp Chat Analyzer", layout="wide")
+st.set_page_config(page_title="ChatViz", layout="wide")
 
 # Sidebar
-st.sidebar.title("📊 WhatsApp Chat Analyzer")
-st.sidebar.markdown("Analyze your WhatsApp chat data with insightful statistics and visualizations.")
+# Sidebar
+st.sidebar.title("📈 **ChatViz**")
+st.sidebar.subheader("**WhatsApp Chat Analyzer**")
+
+st.sidebar.markdown(
+    """
+    **_Analyze and visualize your WhatsApp chat data with insights and graphs_**.
+
+    **Key Features:**
+    - 📁 Media Shared
+    - 🔗 Links Shared
+    - 📅 Monthly & Daily Trends
+    - 🌟 Most Active Users
+    - ☁️ Word Clouds
+    - 😊 Emoji Analysis
+
+    **Upload your chat file** to begin exploring!
+    """
+)
+
 
 uploaded_file = st.sidebar.file_uploader("📁 Choose a file")
 if uploaded_file is not None:
