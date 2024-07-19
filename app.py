@@ -16,7 +16,13 @@ nltk.download('stopwords')
 # Set page config at the top
 st.set_page_config(page_title="ChatViz", layout="wide")
 
-# Sidebar
+def load_css(file_name):
+    with open(file_name) as f:
+        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+
+# Apply custom CSS
+load_css("styles.css")
+
 # Sidebar
 st.sidebar.title("📈 **ChatViz**")
 st.sidebar.subheader("**WhatsApp Chat Analyzer**")
