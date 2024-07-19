@@ -6,3 +6,5 @@ plotly
 wordcloud
 nltk
 urlextract
+emoji
+regex
