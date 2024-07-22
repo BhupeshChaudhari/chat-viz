@@ -46,17 +46,3 @@ A web application for analyzing and visualizing WhatsApp chat data to gain insig
 ```
   streamlit run app.py
 ```
-
-## Usage
-
-- **Top Statistics* : View summary statistics including total messages, words, media shared, and links shared.
-- **Monthly & Daily Timelines** : Check charts showing the number of messages sent per month and day.
-- **Activity Maps** : Analyze which days and months were the most active in terms of messaging.
-- **Heatmaps** : View a heatmap that displays message activity across different days of the week and times of day.
-- **Word Clouds** : Visualize the most frequently used words in your chats with an interactive word cloud.
-- **Most Common Words** : Explore a list and chart of the most common words used in your chats.
-- **Emoji Analysis** : See the frequency and distribution of emojis used in your conversations.
-
-
-
-
